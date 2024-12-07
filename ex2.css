@@ -50,7 +50,7 @@
     background-color: white;
   }
   
-  /* Media query for small screens (mobile) */
+ 
   @media (max-width: 768px) {
     .navbar .nav-links {
       display: none;
