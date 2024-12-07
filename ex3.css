@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General Body Styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  /* Header Styling */
+  .header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+  }
+  
+  /* Container for main content and sidebar */
+  .container {
+    display: flex;
+    flex-direction: column; /* Stacked vertically by default */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Content and Sidebar Styling */
+  .content {
+    background-color: #fff;
+    padding: 20px;
+    flex: 1; /* Take up available space */
+  }
+  
+  .sidebar {
+    background-color: #f0f0f0;
+    padding: 20px;
+    flex: 1; /* Take up equal space with content */
+  }
+  
+  /* Footer Styling */
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+  }
+  
+  /* Media Query for Medium Screens (600px to 900px) */
+  @media (min-width: 600px) and (max-width: 900px) {
+    .container {
+      flex-direction: row; /* Switch to row layout (side-by-side) */
+      gap: 20px;
+    }
+  
+    .header, .footer {
+      padding: 20px;
+    }
+  
+    .header h1 {
+      font-size: 28px;
+    }
+  
+    .footer p {
+      font-size: 16px;
+    }
+  }
+  
+  /* Media Query for Large Screens (900px and wider) */
+  @media (min-width: 900px) {
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      gap: 30px;
+    }
+  
+    .header, .footer {
+      padding: 30px;
+    }
+  
+    .header h1 {
+      font-size: 32px;
+    }
+  
+    .footer p {
+      font-size: 18px;
+    }
+  
+    .content {
+      flex: 2; /* Content takes more space */
+    }
+  
+    .sidebar {
+      flex: 1; /* Sidebar shrinks a little */
+    }
+  }
