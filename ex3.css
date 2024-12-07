@@ -4,7 +4,7 @@
     box-sizing: border-box;
   }
   
-  /* General Body Styles */
+
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -12,7 +12,6 @@
     background-color: #f4f4f4;
   }
   
-  /* Header Styling */
   .header {
     background-color: #333;
     color: white;
@@ -24,28 +23,25 @@
     font-size: 24px;
   }
   
-  /* Container for main content and sidebar */
   .container {
     display: flex;
-    flex-direction: column; /* Stacked vertically by default */
+    flex-direction: column; 
     gap: 20px;
     padding: 20px;
   }
   
-  /* Content and Sidebar Styling */
   .content {
     background-color: #fff;
     padding: 20px;
-    flex: 1; /* Take up available space */
+    flex: 1; 
   }
   
   .sidebar {
     background-color: #f0f0f0;
     padding: 20px;
-    flex: 1; /* Take up equal space with content */
+    flex: 1; 
   }
   
-  /* Footer Styling */
   .footer {
     background-color: #333;
     color: white;
@@ -54,10 +50,9 @@
     margin-top: 20px;
   }
   
-  /* Media Query for Medium Screens (600px to 900px) */
   @media (min-width: 600px) and (max-width: 900px) {
     .container {
-      flex-direction: row; /* Switch to row layout (side-by-side) */
+      flex-direction: row;
       gap: 20px;
     }
   
@@ -74,7 +69,6 @@
     }
   }
   
-  /* Media Query for Large Screens (900px and wider) */
   @media (min-width: 900px) {
     .container {
       max-width: 1200px;
@@ -95,10 +89,10 @@
     }
   
     .content {
-      flex: 2; /* Content takes more space */
+      flex: 2; 
     }
   
     .sidebar {
-      flex: 1; /* Sidebar shrinks a little */
+      flex: 1; 
     }
   }
